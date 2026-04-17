@@ -1,7 +1,7 @@
 import './Timer.css'
 import { useState, useEffect } from "react";
 
-function Timer({initCalls, doRun}) {
+export default function Timer({initCalls, doRun}) {
 
     function getDateAsString() {
         let d = new Date();
@@ -38,5 +38,3 @@ function Timer({initCalls, doRun}) {
         </div>
     );
 }
-
-export default Timer
