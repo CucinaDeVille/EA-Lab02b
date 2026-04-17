@@ -1,6 +1,10 @@
 import './Timer.css'
+import { useState } from "react";
 
 export default function Timer() {
+
+    const [run, setRun] = useState(true);
+    const [calls, setCalls] = useState(10000);
 
     function getDateAsString() {
         let d = new Date();
@@ -11,8 +15,8 @@ export default function Timer() {
     return (
         <div className="App">
             <div className="timer"> {getDateAsString()} </div>
-            <div className="timer">Zeile 2</div>
-            <div className="timer">Zeile 3</div>
+            <div className="timer"> {calls} </div>
+            <div className="timer"> {run ? 'ON' : 'OFF'} </div>
         </div>
     );
 }
