@@ -1,10 +1,10 @@
 import './Timer.css'
 import { useState } from "react";
 
-export default function Timer() {
+export default function Timer({initCalls, doRun}) {
 
-    const [run, setRun] = useState(true);
-    const [calls, setCalls] = useState(10000);
+    const [run] = useState(doRun);
+    const [calls] = useState(initCalls);
 
     function getDateAsString() {
         let d = new Date();
