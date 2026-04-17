@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+.timer {
+    font-family: 'Orbitron', cursive;
+    font-size: 32px;
+    background: #bbbbb9;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px;
+}
