@@ -10,10 +10,10 @@ export default function App() {
     return (
         <div>
 
-            // call Timer and pass values as props
+            {/* call Timer and pass values as props */}
             <Timer initNumber="10000" doRun={run}/>
 
-            // define button and anonymous function to change value of run
+            {/* define button and anonymous function to change value of run */}
             <button className="NiceButton" onClick={() => setRun(prev => !prev)}>
                 {String(run)}
             </button>
